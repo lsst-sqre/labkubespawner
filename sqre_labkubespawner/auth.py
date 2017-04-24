@@ -598,8 +598,7 @@ class HubAuthenticated(object):
             user_model (dict): The user model if the user should be allowed, None otherwise.
         """
 
-        # If the hub likes us, we're fine.
-
+        # Hub likes you, that's good enough for us.
         return model
 
     def get_current_user(self):

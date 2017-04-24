@@ -1,11 +1,15 @@
 # sqre_labkubespawner
 
-Integrate JupyterHub with JupyterLab
+Integrate JupyterHub with JupyterLab; this is a cut-down version of 
+[jupyterhub-labextension](https://github.com/jupyterhub/jupyterhub-labextension)
+modified enough that it will also compile on Python 2.
+
+It hasn't been updated for JupyterLab 0.20 or later yet.
 
 
 ## Prerequisites
 
-* JupyterLab 0.17.0 or later
+* JupyterLab >= 0.17.0, < 0.20.0
 
 ## Installation
 
