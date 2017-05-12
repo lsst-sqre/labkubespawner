@@ -24,7 +24,7 @@ if not os.path.exists('node_modules'):
 setup_args = dict(
     name='sqre_labkubespawner',
     scripts=glob(os.path.join('cli_scripts', '*')),
-    version='0.0.1',
+    version='0.0.3',
     packages=['sqre_labkubespawner'],
     author='Project Jupyter',
     author_email='jupyter@googlegroups.com',
