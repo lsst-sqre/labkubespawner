@@ -10,7 +10,7 @@ if 'develop' in sys.argv or any(a.startswith('bdist') for a in sys.argv):
 setup_args = dict(
     name='sqre_labkubespawner',
     scripts=glob(os.path.join('cli_scripts', '*')),
-    version='0.0.5',
+    version='0.0.6',
     packages=['sqre_labkubespawner'],
     author='Project Jupyter',
     author_email='jupyter@googlegroups.com',
