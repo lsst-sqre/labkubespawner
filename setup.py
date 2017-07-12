@@ -10,14 +10,15 @@ if 'develop' in sys.argv or any(a.startswith('bdist') for a in sys.argv):
 setup_args = dict(
     name='sqre_labkubespawner',
     scripts=glob(os.path.join('cli_scripts', '*')),
-    version='0.0.6',
+    version='0.0.7',
     packages=['sqre_labkubespawner'],
     author='Project Jupyter',
     author_email='jupyter@googlegroups.com',
     keywords=['jupyterlab', 'jupyterlab extension'],
     include_package_data=True,
     install_requires=[
-        'jupyterlab>=0.21.0',
+        'jupyterhub',
+        'jupyterlab>=0.25.1',
         'requests<3.0.0'
     ]
 )
