@@ -16,7 +16,7 @@ class SQRESingleUserLabApp(SingleUserLabApp):
             api_token = os.getenv('JUPYTERHUB_API_TOKEN')
             if api_token:
                 self.token = api_token
-                # settings['page_config_data'] gets set from self.token
+                settings['page_config_data']['token'] = api_token
 
 
 def main(argv=None):
