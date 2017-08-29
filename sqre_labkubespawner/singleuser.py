@@ -12,11 +12,12 @@ class SQRESingleUserLabApp(SingleUserLabApp):
         settings['page_config_data']['LSST'] = 'LSST SQuaRE'
         if 'token' not in settings['page_config_data']:
             settings['page_config_data']['token'] = ''
+        if 'api_token' not in self:
+            self.api_token = ''
         if settings['page_config_data']['token'] == '':
-            api_token = os.getenv('JUPYTERHUB_API_TOKEN')
-            if api_token:
-                self.token = api_token
-                settings['page_config_data']['token'] = api_token
+            if not self.api_token:
+                self.api_token = os.getenv('JUPYTERHUB_API_TOKEN')
+            settings['page_config_data']['token'] = self.api_token
 
 
 def main(argv=None):
